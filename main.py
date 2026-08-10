@@ -1,3 +1,4 @@
+from fastapi import FastAPI
 import telebot
 from telebot import types
 import random
@@ -6,7 +7,7 @@ import random
 TOKEN = "8853257659:AAF60bzhOPPcDgHlV7pAv7ln6Tt1fXMGib8"
 
 bot = telebot.TeleBot(TOKEN)
-
+app = FastAPI()
 # Наша база знань
 baza_krain = {
    # === ЄВРОПА ===
